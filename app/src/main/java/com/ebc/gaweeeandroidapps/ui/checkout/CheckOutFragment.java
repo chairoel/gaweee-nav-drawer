@@ -1,4 +1,4 @@
-package com.ebc.gaweeeandroidapps.ui.gallery;
+package com.ebc.gaweeeandroidapps.ui.checkout;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,15 +14,15 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.ebc.gaweeeandroidapps.R;
 
-public class GalleryFragment extends Fragment {
+public class CheckOutFragment extends Fragment {
 
-    private GalleryViewModel galleryViewModel;
+    private CheckOutViewModel galleryViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         galleryViewModel =
-                new ViewModelProvider(this).get(GalleryViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_gallery, container, false);
+                new ViewModelProvider(this).get(CheckOutViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_check_out, container, false);
         final TextView textView = root.findViewById(R.id.text_gallery);
         galleryViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override

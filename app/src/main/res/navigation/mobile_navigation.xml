@@ -3,23 +3,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_checkin">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.ebc.gaweeeandroidapps.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_checkin"
+        android:name="com.ebc.gaweeeandroidapps.ui.checkin.CheckInFragment"
+        android:label="@string/menu_checkin"
+        tools:layout="@layout/fragment_check_in" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.ebc.gaweeeandroidapps.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_checkout"
+        android:name="com.ebc.gaweeeandroidapps.ui.checkout.CheckOutFragment"
+        android:label="@string/menu_checkout"
+        tools:layout="@layout/fragment_check_out" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.ebc.gaweeeandroidapps.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_maps_report"
+        android:name="com.ebc.gaweeeandroidapps.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_table_report"
+        android:name="com.ebc.gaweeeandroidapps.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
 </navigation>
