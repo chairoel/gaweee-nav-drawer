@@ -16,11 +16,12 @@
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
             android:title="@string/menu_slideshow" />
+
     </group>
 
-    <group android:checkableBehavior="single">
-        <item android:title="@string/menu_report">
-            <menu>
+    <item android:title="@string/menu_report">
+        <menu>
+            <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_maps_report"
                     android:icon="@drawable/ic_menu_camera"
@@ -29,7 +30,27 @@
                     android:id="@+id/nav_table_report"
                     android:icon="@drawable/ic_menu_gallery"
                     android:title="@string/menu_table_report" />
-            </menu>
-        </item>
-    </group>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/ic_menu_camera"
+                    android:title="@string/action_login_short" />
+                <item
+                    android:id="@+id/nav_profile"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/profile" />
+                <item
+                    android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="@string/logout" />
+            </group>
+        </menu>
+    </item>
+
 </menu>
