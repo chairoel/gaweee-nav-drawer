@@ -25,14 +25,14 @@
 
     <fragment
         android:id="@+id/nav_maps_report"
-        android:name="com.ebc.gaweeeandroidapps.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.ebc.gaweeeandroidapps.ui.mapsreport.MapsReportFragment"
+        android:label="@string/menu_maps_report"
+        tools:layout="@layout/fragment_maps_report" />
 
     <fragment
         android:id="@+id/nav_table_report"
-        android:name="com.ebc.gaweeeandroidapps.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
+        android:name="com.ebc.gaweeeandroidapps.ui.tablereport.TableReportFragment"
+        android:label="@string/menu_table_report"
+        tools:layout="@layout/fragment_table_report" />
 
 </navigation>

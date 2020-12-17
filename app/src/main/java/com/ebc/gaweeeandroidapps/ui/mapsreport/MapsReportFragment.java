@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.ebc.gaweeeandroidapps.R;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
 
 public class MapsReportFragment extends Fragment {
 
@@ -25,7 +27,9 @@ public class MapsReportFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_maps_report, container, false);
+        View view = inflater.inflate(R.layout.fragment_maps_report, container, false);
+
+        return view;
     }
 
     @Override
@@ -34,5 +38,4 @@ public class MapsReportFragment extends Fragment {
         mViewModel = new ViewModelProvider(this).get(MapsReportViewModel.class);
         // TODO: Use the ViewModel
     }
-
 }
