@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_table_report" />
 
     <fragment
-        android:id="@+id/nav_login"
+        android:id="@+id/nav_setting"
         android:name="com.ebc.gaweeeandroidapps.ui.tablereport.TableReportFragment"
         android:label="@string/menu_table_report"
         tools:layout="@layout/fragment_table_report" />

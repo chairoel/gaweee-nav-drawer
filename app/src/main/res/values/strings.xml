@@ -14,11 +14,21 @@
     <string name="menu_maps_report">Maps Report</string>
     <string name="menu_table_report">Table Report</string>
 
+    <string name="date">Date</string>
+    <string name="hint_date">2 Dec 2020</string>
+    <string name="hint_check_in">09:00</string>
+    <string name="hint_check_out">17:00</string>
     <string name="hint_ex_date">6–10–2020</string>
     <string name="versi">versi</string>
     <string name="version">0.0.0</string>
     <string name="logo">logo</string>
     <string name="error_password">Password must contain at least 8 characters.</string>
+
+    <string name="notes">Notes :</string>
+    <string name="location">Location:</string>
+    <string name="submit">Submit</string>
+    <string name="location_address">PT. EBconnect, Graha Sentana Lt.5 Jl.Buncit Raya No.2 DKI Jakarta,
+        Jakarta Selatan, Pancoran 12760 Indonesia</string>
 
     <string name="title_activity_login">LoginActivity</string>
     <string name="prompt_email">Email</string>
@@ -32,4 +42,5 @@
     <string name="login_failed">"Login failed"</string>
     <string name="profile">Profile</string>
     <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
 </resources>
