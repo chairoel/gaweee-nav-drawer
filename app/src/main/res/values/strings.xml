@@ -9,6 +9,8 @@
 
     <string name="menu_checkin">Check In</string>
     <string name="menu_checkout">Check Out</string>
+    <string name="dialog_checkout">Check Out</string>
+    <string name="dialog_checkin">Check In</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="menu_report">Report</string>
     <string name="menu_maps_report">Maps Report</string>

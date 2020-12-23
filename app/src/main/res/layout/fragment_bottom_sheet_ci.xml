@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_bottom_sheet_ci"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/dialog_checkin"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/person"
+        app:civ_border_overlay="true"
+        app:civ_circle_background_color="@color/gray" />
+
+    <TextView
+        android:id="@+id/tvNotesCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/notes"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/tvNotesValueCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:cursorVisible="false"
+        android:fontFamily="@font/quicksand"
+        android:gravity="top"
+        android:hint="Write your note"
+        android:inputType="textAutoComplete"
+        android:maxLines="5"
+        android:minLines="1"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/tvLocationCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/quicksand_bold"
+        android:text="@string/location"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvLocationValueCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/quicksand"
+        android:text="@string/location_address"
+        android:textStyle="italic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_submitCI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/colorBaseLight"
+        android:text="@string/submit"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>

@@ -1,82 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.checkin.CheckInFragment">
 
-    <!--<TextView
-        android:id="@+id/text_check_in"
+    <fragment
+        android:id="@+id/map_check_in"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="FragmentTagUsage" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        android:layout_gravity="bottom|center">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="15dp">
-
-        <TextView
-            android:id="@+id/tvNotesCI"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_checkin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginBottom="15dp"
+            android:backgroundTint="@color/colorPrimary"
             android:fontFamily="@font/quicksand_bold"
-            android:text="@string/notes"
-            android:textSize="20sp" />
+            android:gravity="center"
+            android:padding="8dp"
+            android:shadowRadius="10"
+            android:text="@string/menu_checkin"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"
+            app:icon="@drawable/ic_menu_checkin"
+            app:iconGravity="textStart"
+            app:iconSize="24dp" />
 
-        <EditText
-            android:id="@+id/tvNotesValueCI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/white"
-            android:cursorVisible="false"
-            android:fontFamily="@font/quicksand"
-            android:gravity="top"
-            android:hint="Write your note"
-            android:maxLines="5"
-            android:minLines="1"
-            android:textCursorDrawable="@null"
-            android:inputType="textAutoComplete" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <TextView
-            android:id="@+id/tvLocationCI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/quicksand_bold"
-            android:text="@string/location"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/tvLocationValueCI"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/quicksand"
-            android:textStyle="italic"
-            android:text="@string/location_address"/>
-    </LinearLayout>
-
-
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btn_submitCI"
-        android:layout_width="210dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center"
-        android:layout_marginBottom="15dp"
-        android:gravity="center"
-        android:text="@string/submit"
-        android:textAllCaps="true" />
-
-</RelativeLayout>
+</FrameLayout>
